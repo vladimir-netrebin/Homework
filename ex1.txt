@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+
+
+namespace ex1
+{
+    public class Program
+    {
+        public static void Main(string[] args)
+        {
+            int a = 100;
+            int b = 2;
+            while (a < 1000)
+            {
+                for (b = 2; b <= a; b++)
+                {
+                    if (a % b == 0)
+                    {
+                        break;
+                    }
+                }
+                if (b == a)
+                {
+                    Console.WriteLine(b);
+                    b = 2;
+                }
+                a++;
+            }
+            Console.Read();
+        }
+    }
+}

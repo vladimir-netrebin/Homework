@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text.RegularExpressions;
+
+
+
+namespace ex3
+{
+	public class Program
+	{
+		public static void Main(string[] args)
+		{	
+			double a = 0.5;
+			double s = 0;
+			double n;
+			n = double.Parse(Console.ReadLine());
+			for (double i = 1; i <= n; i++) {
+				s += Math.Pow (a, i);
+			}
+			Console.WriteLine (s);
+			Console.Read();
+		}
+
+	}
+}
